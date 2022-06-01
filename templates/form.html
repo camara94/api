@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% if value %}
+<div class="container">
+  <img src="{{value.image}}" />
+  <div id="label">{{value.label}}</div>
+</div>
+{% endif %}

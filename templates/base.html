@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fichier</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 10px 5px;
+        padding: 0;
+        background-color: #b2e0df;
+        height: 100vh;
+        font-size: 14px;
+      }
+
+      .search-container {
+        width: 280px;
+        background: #fff;
+        height: 30px;
+        border-radius: 30px;
+        padding: 10px 20px;   
+        cursor: pointer;
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+          -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+          margin: 10px 5px;
+      }
+
+      .search-container .search-input {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        width: 80%;
+        
+      }
+      .search-container .search-btn .fas {
+        color: #5cbdbb;
+        border-style: none;
+        border-width: 0px;
+        background: transform;
+        
+      }
+
+      #label {
+        background-color: #000;
+        color: #fff;
+        font-style: italic;
+        padding: 5px;
+        width: 280px;
+        margin: 10px 15px;
+    }
+
+    img {
+        margin: 10px 15px;
+        height: 250px;
+        width: 200px;
+    }
+    </style>
+  </head>
+</html>
+<form action="" method=post enctype=multipart/form-data class="search-container">
+    <input type=file name=file class="search-input">
+       <button type=submit value=Upload class="search-btn" >
+       <i type=submit class="fas fa-camera"></i>
+       </button>
+  </form>
+
+  {% block content %}{% endblock %} <br>
+
+</body>
+</html>

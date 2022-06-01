@@ -18,7 +18,7 @@ import requests
 import urllib
 
 
-UPLOAD_FOLDER = "C://Users/damaro/vision_par_ordinateur_pfe/api/static"
+UPLOAD_FOLDER = "static"
 
 base_dir = './../data_2'
 liste_dossier = os.listdir(base_dir + "/train")
